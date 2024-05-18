@@ -17,6 +17,7 @@
     margin-top: 10px;
 }
 
+
 .nav-link{
     color: #FFFFFF;
 }
@@ -163,6 +164,33 @@ ul
     padding-top: 50px;
     color: black;
 }
+
+.card:hover .img-fluid{
+        transform: scaleY(1.4);
+        /* border-top-left-radius: 30%;
+        border-top-right-radius: 30%; */
+        transition: 0.3s ease-in;
+    }
+    .card:hover{
+        background-color: rgb(220, 242, 254);
+
+    }
+.card:hover .card-text
+{
+    font-size: small;
+
+}
+.card:hover .card-title
+{
+    font-size: small;
+}
+.testimonial
+{
+    height: 220px;
+    width: 100%;
+    text-align: center;
+}
+
 .where
 {
     color: black;
@@ -277,6 +305,154 @@ opacity: 0px;
 background: #FFFFFF;
 
 }
+
+#btnl {
+    font-size: 11px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+   margin-left: 50%;
+   cursor: pointer;
+   visibility: hidden;
+   background: transparent;
+
+  }
+  
+  .scard1:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard1:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#5b9ef5;
+    opacity:0.2;
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    transition: .3s ease;
+  }
+  
+  .scard2:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard2:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  .scard3:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard3:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  .scard4:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard4:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  .scard5:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard5:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  .scard6:hover .overlay {
+    height: 102%;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    
+  }
+  .scard6:hover #btnl
+  {
+    background-color:rgb(9, 9, 171);
+    visibility:visible;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 200px;
+    color: white;
+    opacity: 1;
+    font-size: large;
+
+  }
+  
+  
+
+
 .tally
 {
     height: 40px;
@@ -311,33 +487,133 @@ background: #FFFFFF;
 }
 .scard1
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
     margin: 40px;
-    background-image: url("./fig_images/Animation\ Border\ Card.png");
     font-size: small;
     padding: 50px;
     padding-top: 30px;
 }
+.scard1 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
+}
+
 .scard2
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
      margin: 40px;
-     background-image: url("./fig_images/Animation\ Border\ Card.png");
      font-size: small;
      padding: 50px;
      padding-top: 30px;
 }
+.scard2 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
+}
 .scard3
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
     margin: 40px;
-    background-image: url("./fig_images/Animation\ Border\ Card.png");
     font-size: small;
     padding: 50px;
     padding-top: 30px;
+}
+.scard3 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
 }
 .card2
 {
@@ -351,34 +627,133 @@ background: #FFFFFF;
 }
 .scard4
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
     margin: 40px;
-    background-image: url("./fig_images/Animation\ Border\ Card.png");
     font-size: small;
     padding: 50px;
     padding-top: 30px;
+}
+.scard4 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
 }
 .scard5
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
      margin: 40px;
-     background-image: url("./fig_images/Animation\ Border\ Card.png");
     font-size: small;
     padding: 50px;
     padding-top: 30px;
 }
+.scard5 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
+}
 .scard6
 {
-    height: 300px;
+    height: 220px;
     width: 400px;
     margin: 40px;
-    background-image: url("./fig_images/Animation\ Border\ Card.png");
     font-size: small;
     padding: 50px;
     padding-top: 30px;
 
+}
+.scard6 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #9896fb;
+        border-radius: 10px;
+        animation: clippath 3s infinite linear;
+    }
+}
+
+@keyframes clippath {
+    100%,
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+    50% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    0% {
+        clip-path: inset(95% 0 0 0 );
+    }
+    100% {
+        clip-path: inset(95% 0 0 0 );
+    }
 }
 .question
 {
@@ -591,7 +966,8 @@ hr
 }
 #btn5:hover
 {
-    background-color: plum;
+    background-color: rgb(193, 28, 154);
+    color: white;
 }
 .accordion
 {
@@ -601,7 +977,7 @@ hr
 {
     height: 1100px;
     width: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     margin-top: 0px;
 }
 .content1
